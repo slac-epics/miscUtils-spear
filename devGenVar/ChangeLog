@@ -1,0 +1,41 @@
+2011/03/04 Till Straumann <strauman@slac.stanford.edu>
+    - devGenVarApp/src/devGenVar.c: Let 'devGenVarRegister'
+      make copy of name when creating hash-table entry so
+      the user may destroy it.
+2011/03/03 Till Straumann <strauman@slac.stanford.edu>
+    - devGenVarApp/src/devGenVar.c, devGenVarApp/src/devGenVar.h,
+      README: updated doc, added FLG_NPOST.
+2011/03/03 Till Straumann <strauman@slac.stanford.edu>
+    - devGenVarApp/src/devGenVar.c: post event when input
+      records process also.
+2011/03/01 Till Straumann <strauman@slac.stanford.edu>
+    - devGenVarApp/src/devGenVar.c, devGenVarApp/src/devGenVar.h,
+      devGenVarApp/Db/genVarTest.db, devGenVarApp/src/genVarTestMain.cpp,
+      README:
+      added support for timestamps, status, severity and
+      asynchronous record processing (output records).
+2011/01/28 Till Straumann <strauman@slac.stanford.edu>
+    - devGenVarApp/src/devGenVar.c, devGenVarApp/src/devGenVar.h:
+      removed devGenVarInitDevSup(). devGenVar should be available
+      before iocInit(). We now do lazy init via epicsThreadOnce...
+2011/01/27 Till Straumann <strauman@slac.stanford.edu>
+    - devGenVarApp/src/devGenVar.c, devGenVarApp/src/devGenVar.h:
+      hash table size must be a power of two between 8..16.
+2011/01/27 Till Straumann <strauman@slac.stanford.edu>
+    - devGenVarApp/src/devGenVar.c, devGenVarApp/src/devGenVar.h,
+      devGenVarApp/src/devGenVar.dbd:
+      Cannot use the std registry because that may overflow and
+      there is currently no way to increase the table size
+      (registrySetTableSize() doesn't work because no app can
+      call it early enough [C++]).
+
+      Therefore, we now use our own hash table and provide a
+      devGenVarConfig(tableSz) function to configure its
+      size.
+
+2011/01/14 Till Straumann <strauman@slac.stanford.edu>
+    - devGenVarApp/src/devGenVar.c, devGenVarApp/src/devGenVar.h:
+      Added 'devGenVarInitScanPvt()', 'devGenVarLockRaw()',
+      'devGenVarUnlockRaw()', 'devGenVarScan()'
+
+    - ChangeLog: Added

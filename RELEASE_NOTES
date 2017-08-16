@@ -1,0 +1,23 @@
+#==============================================================
+#
+#  Name: RELEASE_NOTES
+#
+#  Rem:  This files describes release notes for 
+#        the SPEAR miscUtils epics module.   
+#
+#	miscUtils contains the following general use module support:
+#	* devBusMapped  - Device Support for Accessing Memory-Mapped Registers
+#	* devEpicsDma   - General DMA Interface
+#	* devGenVar     - Device Support for Connecting Basic C/C++ Variables 
+#	                  to EPICS Records
+#	* drvRTEMSDma   - RTEMS DMA Interface (used by devEpicsDma)
+#	* miscUtils     - Miscellaneous Utilities
+#
+#--------------------------------------------------------------
+
+miscUtils-Rx-x-x  M. Dunning 27-Jul-2017
+    - This is miscUtils-R0-0-0, built with base R3.15.5-1.0 from lcls
+    - drvRTEMSDma/src/drvRTEMSDmaSup.c: Add "#include <assert.h>" for assert function
+
+miscUtils-R0-0-0: 10/8/2012
+	* Initial Version.
