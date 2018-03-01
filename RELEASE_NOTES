@@ -15,6 +15,11 @@
 #
 #--------------------------------------------------------------
 
+R0.0.0-0.0.1  S.Condamoor 28-Feb-2018
+    - Added fix for bug (missing initialization) in devEpicsDma/epicsDma.c
+	  dmaId->waiting=0;
+	  per T.Straumann's recommendation
+	
 miscUtils-Rx-x-x  M. Dunning 27-Jul-2017
     - This is miscUtils-R0-0-0, built with base R3.15.5-1.0 from lcls
     - drvRTEMSDma/src/drvRTEMSDmaSup.c: Add "#include <assert.h>" for assert function

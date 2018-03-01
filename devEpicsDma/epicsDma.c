@@ -104,6 +104,7 @@ epicsDmaCreate(epicsDmaCallback_t callback, void *context)
     dmaId->eventId = NULL;
     dmaId->callback = callback;
     dmaId->context = context;
+	dmaId->waiting=0;
     return dmaId;
 }
 
