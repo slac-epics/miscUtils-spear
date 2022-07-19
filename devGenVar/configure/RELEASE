@@ -10,8 +10,9 @@
 #include $(TOP)/RELEASE_SITE
 #include $(TOP)/../../../configure/RELEASE-master
 
-include $(TOP)/../../../RELEASE_SITE_3.15
-EPICS_BASE=$(EPICS_SITE_TOP_SPEAR)/3.15.5epics/base
+include $(TOP)/../../../RELEASE_SITE_7.0.3.1-1.0
+
+EPICS_BASE=$(BASE_SITE_TOP)/$(BASE_MODULE_VERSION)
 
 
 #TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
