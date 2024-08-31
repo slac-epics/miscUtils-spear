@@ -8,7 +8,7 @@
 # each time EPICS_BASE, SNCSEQ, or any other external
 # module defined in the RELEASE file is rebuilt.
 
-include $(TOP)/../../RELEASE_SITE_7.0.3.1-1.0
+include $(TOP)/../../RELEASE_SITE_7.0.3.1-1.0_sdf
 
 EPICS_BASE=$(BASE_SITE_TOP)/$(BASE_MODULE_VERSION)
 
