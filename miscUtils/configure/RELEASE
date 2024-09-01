@@ -7,6 +7,6 @@
 #INSTALL_LOCATION_APP=$(TOP)/../..
 #include $(TOP)/../../../configure/RELEASE-master
 
-include $(TOP)/../../../RELEASE_SITE_3.15
-EPICS_BASE=$(EPICS_SITE_TOP_SPEAR)/3.15.5epics/base
+include $(TOP)/../../../RELEASE_SITE_7.0.3.1-1.0_sdf
+EPICS_BASE=$(BASE_SITE_TOP)/$(BASE_MODULE_VERSION)
 

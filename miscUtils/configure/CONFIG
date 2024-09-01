@@ -2,7 +2,7 @@
 include $(TOP)/configure/CONFIG_APP
 # Add any changes to make definitions here
 
-#CROSS_COMPILER_TARGET_ARCHS = vxWorks-68040
+CROSS_COMPILER_TARGET_ARCHS = RTEMS-beatnik RTEMS-mvme3100 RTEMS-svgm linuxRT-x86_64 linuxRT-i686
 ifeq ($(EPICS_HOST_ARCH),solaris-sparc-gnu)
 CROSS_COMPILER_TARGET_ARCHS =
 endif
